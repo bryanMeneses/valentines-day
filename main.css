@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Kalam", cursive;
+  color: rgb(245, 250, 255);
+  overflow-x: hidden;
+}
+
+section {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 16px;
+  text-align: center;
+}
+
+.first {
+  background-color: #0d121e;
+}
+
+.second {
+  background-color: #4d0000;
+}
+
+.third {
+  background-color: #deeff1;
+}
+
+.third * {
+  color: #0d121e;
+}
+
+.fourth {
+  background-color: #ea7176;
+}
+
+.travel {
+  width: 100%;
+  max-width: 640px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  overflow: initial;
+  margin-bottom: 80px;
+}
+
+.travel .plane {
+  width: 100%;
+  height: 40px;
+  margin-bottom: 24px;
+  position: relative;
+  overflow: initial;
+}
+
+.travel .plane img {
+  position: absolute;
+  top: 24px;
+  left: 0;
+  transform: rotate(35deg);
+}
+
+h1 {
+  font-size: 48px;
+}
+h2 {
+  font-size: 40px;
+}
+h3 {
+  font-size: 32px;
+}
+h4 {
+  font-size: 24px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 16px;
+}
+
+@media (min-width: 480px) {
+  h1 {
+    font-size: 64px;
+  }
+  h2 {
+    font-size: 48px;
+  }
+  h3 {
+    font-size: 40px;
+  }
+  h4 {
+    font-size: 32px;
+  }
+  h5 {
+    font-size: 24px;
+  }
+  h6 {
+    font-size: 16px;
+  }
+}
+
+@keyframes heartbeat {
+  0% {
+    transform: scale(0.75);
+  }
+  20% {
+    transform: scale(1);
+  }
+  40% {
+    transform: scale(0.75);
+  }
+  60% {
+    transform: scale(1);
+  }
+  80% {
+    transform: scale(0.75);
+  }
+  100% {
+    transform: scale(0.75);
+  }
+}
+
+.beating-hearts {
+  text-align: center;
+}
+
+.beating-hearts img {
+  animation: heartbeat 1.25s infinite;
+}
+.beating-hearts img:nth-of-type(2) {
+  animation-delay: 0.75s;
+}
